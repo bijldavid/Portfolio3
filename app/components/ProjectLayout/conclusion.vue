@@ -87,7 +87,7 @@ section div.vertical-lines {
 }
 
 section h2 {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
     font-weight: 400;
     color: var(--background-solid);
@@ -95,7 +95,7 @@ section h2 {
 }
 
 section p {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--p-size);
     font-weight: 400;
     line-height: 1.5em;

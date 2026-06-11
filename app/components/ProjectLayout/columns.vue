@@ -70,10 +70,10 @@ onBeforeUnmount(() => {
     position: sticky;
     top: 5rem;
     left: 5rem;
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
     height: max-content;
     width: max-content;
     align-items: center;
@@ -117,7 +117,7 @@ onBeforeUnmount(() => {
 }
 
 .columns .col-2>div p {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--p-size);
     font-weight: 400;
     line-height: 1.5em;
@@ -125,7 +125,7 @@ onBeforeUnmount(() => {
 
 .columns .col-2>div .paragraph {
     grid-column: 2;
-    color: black;
+    color: var(--text);
 
     display: grid;
     gap: .75rem;

@@ -59,10 +59,10 @@ defineProps(['id', 'slug', 'title', 'number', 'image', 'imageAlt', 'description'
 }
 
 .projects li .card-upper .text-container h3 {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--h3-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
 }
 
 .projects li .card-upper .text-container p {
@@ -145,7 +145,7 @@ defineProps(['id', 'slug', 'title', 'number', 'image', 'imageAlt', 'description'
 }
 
 .projects li .card-upper .image-container ul li p {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--small-size);
     font-weight: 400;
     color: var(--backdrop-200);
@@ -171,10 +171,10 @@ defineProps(['id', 'slug', 'title', 'number', 'image', 'imageAlt', 'description'
 }
 
 .projects li .card-lower>p {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--small-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
     line-height: 1.5em;
 }
 </style>

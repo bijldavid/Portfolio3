@@ -365,7 +365,7 @@ const hideTooltip = () => {
 
 
 .container section:nth-of-type(1) .content-container h2 {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
     font-weight: 400;
     color: var(--background-solid);
@@ -386,7 +386,7 @@ const hideTooltip = () => {
 }
 
 .container section:nth-of-type(1) .content-container p {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--p-size);
     font-weight: 400;
     line-height: 1.5em;
@@ -410,10 +410,10 @@ const hideTooltip = () => {
     text-align: center;
     padding-block: 3rem;
     border-bottom: 1px solid var(--background-grid);
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
 }
 
 .container .skills span {
@@ -489,10 +489,10 @@ const hideTooltip = () => {
 }
 
 .container .skills>div div h3 {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--small-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
     line-height: 1.5em;
     max-width: max-content;
     padding: .25rem .75rem;
@@ -523,10 +523,10 @@ const hideTooltip = () => {
 }
 
 .container .skills>div div ul li .skill-title {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--p-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
 }
 
 .container .skills>div div ul li .percentage {
@@ -562,19 +562,19 @@ const hideTooltip = () => {
 }
 
 .container .work-experience .text-container h2 {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
     height: max-content
 }
 
 .container .work-experience .text-container p {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--p-size);
     font-weight: 400;
     line-height: 1.5em;
-    color: black;
+    color: var(--text);
 }
 
 .container .work-experience .timeline {
@@ -765,19 +765,19 @@ const hideTooltip = () => {
     }
 
     .container .work-experience .text-container h2 {
-        font-family: 'waffer', sans-serif;
+        font-family: 'poppins', sans-serif;
         font-size: var(--h2-size);
         font-weight: 400;
-        color: black;
+        color: var(--text);
         height: max-content
     }
 
     .container .work-experience .text-container p {
-        font-family: 'waffer', sans-serif;
+        font-family: 'poppins', sans-serif;
         font-size: var(--p-size);
         font-weight: 400;
         line-height: 1.5em;
-        color: black;
+        color: var(--text);
     }
 
     .container .work-experience .timeline {

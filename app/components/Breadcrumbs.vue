@@ -30,10 +30,10 @@ header nav {
 
 header nav a {
     position: relative;
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--small-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
     line-height: 1.5em;
 }
 

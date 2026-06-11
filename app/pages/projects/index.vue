@@ -266,10 +266,10 @@ onMounted(() => {
     cursor: pointer;
 
     padding: 1rem;
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--p-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
     white-space: nowrap;
 }
 
@@ -322,17 +322,17 @@ onMounted(() => {
 }
 
 .container section:nth-of-type(1) .introduction div h2 {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
 }
 
 .container section:nth-of-type(1) .introduction div p {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--p-size);
     font-weight: 400;
-    color: black;
+    color: var(--text);
     line-height: 1.5em;
 }
 
@@ -387,7 +387,7 @@ onMounted(() => {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--small-size);
     font-weight: 400;
     color: var(--backdrop-200);

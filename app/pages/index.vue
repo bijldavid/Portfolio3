@@ -56,7 +56,7 @@
 </template>
 
 <script setup>
-// definePageMeta({ layout: 'home' })
+definePageMeta({ layout: 'home' })
 </script>
 
 

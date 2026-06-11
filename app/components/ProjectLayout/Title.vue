@@ -61,7 +61,7 @@ section .title-container div:last-of-type {
 
 section .title-container div p {
     position: relative;
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--small-size);
     font-weight: 400;
     color: var(--border-400);

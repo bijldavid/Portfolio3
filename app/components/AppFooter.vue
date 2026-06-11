@@ -144,7 +144,7 @@ footer .container .right ul:nth-of-type(2) {
 
 
 footer .container .right ul:nth-of-type(2) li a {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--small-size);
     color: var(--border-100);
     padding-right: 1.5rem;
@@ -184,7 +184,7 @@ footer .container .right ul:nth-of-type(2) li:nth-of-type(2) a:hover::before {
 }
 
 footer .container>p {
-    font-family: 'waffer', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: var(--small-size);
     color: var(--border-100);
     padding: 1rem;
