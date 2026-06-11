@@ -1,0 +1,260 @@
+html {
+    scrollbar-gutter: stable;
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-400) transparent;
+}
+
+:root {
+    --background-solid: #cec0a9;
+    --background-grid: #926969;
+    --background-guideline: #cfba9b;
+
+    --backdrop-100: #fdf1de;
+    --backdrop-200: #e7d7be;
+    --backdrop-300: #cfba9b;
+    --backdrop-400: #b9a991;
+    --backdrop-500: #827766;
+    --backdrop-600: #25221f;
+
+    --border-100: #b56262;
+    --border-300: #942626;
+    --border-400: #790c0c;
+    --border-600: #4a1010;
+
+    --hp-timing-function: linear(0, 0.002 0.3%, 0.009 0.7%, 0.036 1.4%, 0.084 2.2%, 0.147 3%, 0.293 4.5%, 0.749 8.7%, 0.869 10%, 0.971 11.3%, 1.052 12.6%, 1.111 13.9%, 1.132 14.5%, 1.151 15.2%, 1.165 15.9%, 1.174 16.6%, 1.179 17.3%, 1.179 18.1%, 1.176 18.9%, 1.167 19.8%, 1.142 21.5%, 1.05 26.2%, 1.03 27.4%, 1.012 28.6%, 0.996 29.9%, 0.983 31.3%, 0.974 32.7%, 0.969 34.2%, 0.968 35.8%, 0.97 37.6%, 0.998 46.3%, 1.003 48.9%, 1.005 51.7%, 1.005 55.3%, 0.999 69%, 1);
+    --hp-duration: 2s;
+
+    --h1-size: 1rem;
+    --h2-size: 2.25rem;
+    --h3-size: 1.33rem;
+    --p-size: 1rem;
+    --small-size: .875rem;
+}
+
+@media (width < 700px) {
+    :root {
+        --h1-size: .875rem;
+        --h2-size: 2rem;
+        --h3-size: 1rem;
+        --p-size: .875rem;
+        --small-size: .8rem;
+    }
+}
+
+::selection {
+    background: #7676764d;
+}
+
+main {
+    min-height: 100vh;
+    background: var(--background-solid);
+}
+
+.container {
+    --inline-offset: 2rem;
+    position: relative;
+    max-width: 1200px;
+    height: 100%;
+    padding-block: 5rem;
+    margin: 0 auto;
+    padding-inline: var(--inline-offset);
+}
+
+@media (width < 700px) {
+    .container {
+        --inline-offset: 1rem;
+    }
+}
+
+.scene {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    perspective: 50em;
+
+    perspective-origin: center center;
+    transform-style: preserve-3d;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* 3D ENVIRONMENT */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.threeD {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+
+    perspective: 40em;
+    perspective-origin: center center;
+    transform-style: preserve-3d;
+}
+
+.threeD * {
+    transform-style: preserve-3d;
+}
+
+.background {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(200deg, var(--background-solid) 20%, transparent),
+        repeating-linear-gradient(45deg, var(--background-grid) 1px, var(--background-grid) 2px, var(--background-solid) 2px, var(--background-solid) 20px);
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* VERTICAL LINES */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.vertical-lines {
+    --line-color: var(--background-grid);
+
+    position: relative;
+}
+
+.vertical-lines::before,
+.vertical-lines::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    background: var(--line-color);
+}
+
+.vertical-lines::before {
+    left: var(--inline-offset);
+}
+
+.vertical-lines::after {
+    right: var(--inline-offset);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* HORIZONTAL LINES */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.horizontal-lines {
+    position: relative;
+}
+
+.horizontal-lines::before {
+    --line-color: var(--background-grid);
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(var(--line-color) 1px, transparent 1px, transparent calc(100% - 1px), var(--line-color) calc(100% - 1px));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* EMPTY */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.empty {
+    height: calc(1rem + 2rem);
+    width: 100%;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* BUTTON */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.button {
+    isolation: isolate;
+    position: relative;
+    height: max-content;
+    width: max-content;
+    border: 1.5px solid var(--border-400);
+}
+
+.button::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--border-400);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+
+.button:hover::after {
+    width: 100%;
+}
+
+@property --slide {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+}
+
+.button>p {
+    font-family: 'rm-mono', monospace;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: .33rem .66rem;
+    width: max-content;
+
+    background-image: linear-gradient(90deg,
+            var(--backdrop-200) var(--slide),
+            var(--border-400) var(--slide));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: --slide 0.3s ease !important;
+}
+
+.button:hover p {
+    --slide: 100%;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* REVEAL */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+h1,
+h2,
+h3,
+small,
+li,
+p:not(.reveal-ignore) {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+    transition: opacity 0.6s ease, translate 0.6s ease, scale 0.6s ease;
+}
+
+.is-pending-reveal {
+    opacity: 0 !important;
+    translate: 0 28px !important;
+    scale: 0.94 !important;
+}
