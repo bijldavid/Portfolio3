@@ -74,9 +74,9 @@ definePageMeta({ layout: 'home' })
     filter: url(#pixelate);
 }
 
-/* .firefox .pixelate {
+.firefox .pixelate {
     filter: none;
-} */
+}
 
 .index ul {
     position: fixed;

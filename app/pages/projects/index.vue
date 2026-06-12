@@ -397,8 +397,10 @@ onMounted(() => {
     opacity: .5;
 }
 
-.container section:nth-of-type(2) fieldset label:hover {
-    opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+    .container section:nth-of-type(2) fieldset label:hover {
+        opacity: 1;
+    }
 }
 
 .container section:nth-of-type(2) fieldset label::before {
