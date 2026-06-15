@@ -225,7 +225,7 @@ onMounted(() => {
     left: 10rem;
     translate: -50% 0;
     height: 2rem;
-    aspect-ratio: 1;
+    width: 2rem;
     border-radius: 10px;
     corner-shape: bevel;
     background: var(--backdrop-200);
