@@ -67,6 +67,10 @@ main {
     padding-inline: var(--inline-offset);
 }
 
+strong {
+    font-weight: 500;
+}
+
 @media (width < 700px) {
     .container {
         --inline-offset: 1rem;
@@ -130,7 +134,6 @@ main {
 
 .vertical-lines {
     --line-color: var(--background-grid);
-
     position: relative;
 }
 
@@ -142,6 +145,7 @@ main {
     width: 1px;
     top: 0;
     background: var(--line-color);
+
 }
 
 .vertical-lines::before {

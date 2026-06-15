@@ -70,6 +70,11 @@
 
             <div class="empty horizontal-lines"></div>
 
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- PROJECT BANNER  -->
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <ProjectLayoutBanner :project="project" />
+
             <ProjectLayoutColumns>
                 <template #title>Process</template>
 
@@ -242,8 +247,10 @@ section:has(> div > input:checked) form {
 
             <div class="empty horizontal-lines"></div>
 
-            <ProjectLayoutConclusion :project-link="project.projectLink" :project-github="project.projectGithub">
-                <template #title>Final Result</template>
+            <ProjectLayoutConclusion :project="project" :project-link="project.projectLink"
+                :project-github="project.projectGithub">
+                <template #title>
+                    Final Result</template>
                 <template #content>
                     The final result was a playful and interactive CSS experiment that showcased the possibilities of
                     CSS in a fun way. It was rewarding to see how the different parts of the project came together,
@@ -285,13 +292,31 @@ const route = useRoute()
     height: 50%;
 }
 
+.container::before,
+.container::after {
+    z-index: 10;
+}
+
 .container .project-media {
     padding-left: calc(30px + 3rem);
+}
+
+:deep(.image-container) {
+    padding: 7.5rem;
+    margin: 2rem;
+    background-color: var(--backdrop-200);
+    background-image:
+        radial-gradient(circle, var(--backdrop-200), transparent),
+        linear-gradient(0deg, transparent, var(--backdrop-200)), repeating-linear-gradient(90deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px), repeating-linear-gradient(0deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px);
 }
 
 @media (width < 700px) {
     .container .project-media {
         padding-left: 0;
+    }
+
+    :deep(.image-container) {
+        padding: 3.5rem;
     }
 }
 </style>

@@ -139,7 +139,7 @@ const getHighlighter = () => {
     if (!globalThis[HIGHLIGHTER_CACHE_KEY]) {
         globalThis[HIGHLIGHTER_CACHE_KEY] = createHighlighter({
             themes: [],
-            langs: [props.lang]
+            langs: []
         })
     }
 
@@ -148,6 +148,16 @@ const getHighlighter = () => {
 
 onMounted(async () => {
     const highlighter = await getHighlighter()
+
+    const loadedLangs = highlighter.getLoadedLanguages()
+    if (!loadedLangs.includes(props.lang)) {
+        await highlighter.loadLanguage(props.lang)
+    }
+
+    const loadedThemes = highlighter.getLoadedThemes()
+    if (!loadedThemes.includes(THEME.name)) {
+        await highlighter.loadTheme(THEME)
+    }
 
     highlighted.value = highlighter.codeToHtml((props.code || '').trim(), {
         lang: props.lang,

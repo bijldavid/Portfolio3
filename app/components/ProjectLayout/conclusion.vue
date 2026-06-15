@@ -9,6 +9,9 @@
             </p>
 
             <div class="project-navigation">
+                <p class="usage-warning">
+                    <slot name="usage-warning" />
+                </p>
                 <a :href="projectLink" target="_blank" rel="noopener noreferrer">
                     View project
                 </a>
@@ -26,13 +29,13 @@
 </template>
 
 <script setup>
+
 defineProps({
     index: String,
     projectLink: String,
     projectGithub: String,
+    project: Object,
 })
-
-import { cssCatProject as project } from '~/data/projects'
 
 </script>
 
@@ -66,10 +69,14 @@ section .content-container p {
     font-size: var(--p-size);
     font-weight: 400;
     line-height: 1.75em;
+}
+
+section .content-container p:not(.usage-warning) {
     padding-bottom: 3rem;
 }
 
-section .content-container p::after {
+
+section .content-container p:not(.usage-warning)::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -82,12 +89,7 @@ section .content-container p::after {
 section .image-container {
     display: grid;
     place-items: center;
-    padding: 7.5rem;
     margin: 2rem;
-    background-color: var(--backdrop-200);
-    background-image:
-        radial-gradient(circle, var(--backdrop-200), transparent),
-        linear-gradient(0deg, transparent, var(--backdrop-200)), repeating-linear-gradient(90deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px), repeating-linear-gradient(0deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px);
     border: 1px solid var(--background-grid);
 }
 
@@ -169,14 +171,38 @@ section .project-navigation a:hover::before {
         left: -2rem;
         width: calc(100% + 2rem + 2rem);
     }
-
-    section .image-container {
-        padding: 3.5rem;
-    }
 }
 
+.usage-warning {
+    position: relative;
+    display: none;
+    padding: 1.5rem;
+    background-color: #bc5c594f;
+    color: #9d0e09;
+    border: 3px solid #9d0e09;
+    border-radius: 10px;
+    corner-shape: bevel;
+    padding-left: 4rem;
+    margin-bottom: 1rem;
+}
 
+.usage-warning::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    translate: 0 -50%;
+    height: 2rem;
+    width: 2rem;
+    background: url('/images/warning.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
 
+.warning .usage-warning {
+    display: block;
+}
 
 
 
