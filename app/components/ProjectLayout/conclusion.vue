@@ -168,8 +168,8 @@ section .project-navigation a:hover::before {
     }
 
     section .content-container p::after {
-        left: -2rem;
-        width: calc(100% + 2rem + 2rem);
+        left: -2rem !important;
+        width: calc(100% + 2rem + 2rem) !important;
     }
 }
 

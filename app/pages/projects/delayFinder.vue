@@ -408,6 +408,6 @@ const route = useRoute()
         padding-left: 0;
     }
 
-    :deep(.image-container) {}
+    /* :deep(.image-container) {} */
 }
 </style>

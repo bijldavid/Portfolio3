@@ -119,4 +119,5 @@ export const projects = [
 ];
 
 export const cssCatProject = projects[0];
-export const delayFinderProject = projects[4]; // index 4 = delayFinder
+export const gssDashboardProject = projects[1];
+export const delayFinderProject = projects[4];
