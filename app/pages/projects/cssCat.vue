@@ -305,10 +305,6 @@ const route = useRoute()
 
 :deep(.image-container) {
     padding: 5rem !important;
-    background-color: var(--backdrop-200);
-    background-image:
-        radial-gradient(circle, var(--backdrop-200), transparent),
-        linear-gradient(0deg, transparent, var(--backdrop-200)), repeating-linear-gradient(90deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px), repeating-linear-gradient(0deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px);
 }
 
 :deep(.image-container a img:not(.external-link-indicator)) {

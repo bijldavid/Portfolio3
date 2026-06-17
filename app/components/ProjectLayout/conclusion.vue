@@ -97,8 +97,10 @@ section .image-container {
 
     padding: 3rem;
     margin: 2rem;
-    background-size: 100%;
-    background-repeat: repeat;
+    background-color: var(--backdrop-200);
+    background-image:
+        radial-gradient(circle, var(--backdrop-200), transparent),
+        linear-gradient(0deg, transparent, var(--backdrop-200)), repeating-linear-gradient(90deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px), repeating-linear-gradient(0deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px);
 }
 
 section .image-container a {
@@ -125,7 +127,7 @@ section .image-container a .external-link-indicator {
 section .image-container a img:not(.external-link-indicator) {
     border-radius: 15px;
     corner-shape: bevel;
-    filter: drop-shadow(0 0 10px #0000001a);
+    filter: drop-shadow(0 0 10px #0000002c);
 }
 
 section .image-container a:hover {

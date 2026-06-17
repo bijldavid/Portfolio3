@@ -270,11 +270,6 @@ const route = useRoute()
     padding-left: calc(30px + 3rem);
 }
 
-:deep(.image-container) {
-    background-color: #002D27;
-    background-image: url('/images/gss-pattern.png');
-}
-
 @media (width < 700px) {
     .container .project-media {
         padding-left: 0;

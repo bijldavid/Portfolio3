@@ -259,11 +259,6 @@ const route = useRoute()
     padding-left: calc(30px + 3rem);
 }
 
-:deep(.image-container) {
-    background: #1C1C1C;
-    background-image: url('/images/qwell-pattern.png');
-}
-
 @media (width < 700px) {
     .container .project-media {
         padding-left: 0;

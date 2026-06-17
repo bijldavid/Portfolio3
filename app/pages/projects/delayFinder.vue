@@ -387,12 +387,6 @@ const route = useRoute()
     padding-left: calc(30px + 3rem);
 }
 
-:deep(.image-container) {
-    background: #FFC919;
-    background-image: url('/images/ns-pattern.png');
-
-}
-
 @media (width < 700px) {
     .container .project-media {
         padding-left: 0;
