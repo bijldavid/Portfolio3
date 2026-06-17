@@ -265,6 +265,11 @@
                         concept to life and introducing the visual identity as soon as the website loads.
                     </p>
 
+                    <video class="project-media" autoplay loop muted playsinline>
+                        <source src="/images/bar-animation.mov" type="video/quicktime; codecs=hvc1">
+                        <source src="/images/bar-animation.webm" type="video/webm; codecs=vp9">
+                    </video>
+
                     <p>
                         I tested the layout across mobile, tablet, laptop and widescreen dimensions. Sections, card
                         layouts and
