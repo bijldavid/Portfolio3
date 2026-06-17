@@ -12,7 +12,7 @@
                 <div class="introduction">
                     <ul>
                         <li v-for="project in projects" :key="project.id" class="reveal-ignore">
-                            <a :href="`#${project.id}`">
+                            <a :href="`#${project.slug}`">
                                 <span>{{ project.number }}</span>{{ project.title }}
                             </a>
                         </li>

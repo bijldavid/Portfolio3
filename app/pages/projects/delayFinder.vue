@@ -7,7 +7,7 @@
         <div class="container vertical-lines">
             <Breadcrumbs>
                 <NuxtLink to="/" viewTransition>Home</NuxtLink>
-                <NuxtLink to="/projects" viewTransition>Projects</NuxtLink>
+                <NuxtLink :to="`/projects#${project.slug}`" viewTransition>Projects</NuxtLink>
                 <NuxtLink :to="route.path" viewTransition>
                     {{ project.title }}
                 </NuxtLink>
@@ -388,26 +388,14 @@ const route = useRoute()
 }
 
 :deep(.image-container) {
-    padding: 3rem;
     background: #FFC919;
     background-image: url('/images/ns-pattern.png');
-    background-size: 100%;
-    background-repeat: repeat;
 
-}
-
-:deep(.image-container) img {
-    border: 1px solid var(--backdrop-200);
-    border-radius: 15px;
-    corner-shape: bevel;
-    filter: drop-shadow(0 0 10px #0000001a);
 }
 
 @media (width < 700px) {
     .container .project-media {
         padding-left: 0;
     }
-
-    /* :deep(.image-container) {} */
 }
 </style>

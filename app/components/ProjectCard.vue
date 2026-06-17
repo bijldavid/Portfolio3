@@ -1,5 +1,5 @@
 <template>
-    <li :id="id" :style="`view-transition-name: project-card-${slug}`">
+    <li :id="slug" :style="`view-transition-name: project-card-${slug}`">
         <div class="card-upper vertical-lines">
             <div class="text-container">
                 <h3>{{ title }}</h3>
@@ -108,7 +108,7 @@ defineProps(['id', 'slug', 'title', 'number', 'image', 'imageAlt', 'description'
 }
 
 .projects li .card-upper .image-container>img {
-    width: 50%;
+    width: 65%;
     height: auto;
 }
 

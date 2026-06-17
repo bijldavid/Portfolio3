@@ -7,8 +7,10 @@
 
             <Breadcrumbs>
                 <NuxtLink to="/" viewTransition>Home</NuxtLink>
-                <NuxtLink to="/projects" viewTransition>Projects</NuxtLink>
-                <NuxtLink :to="route.path" viewTransition>{{ project.title }}</NuxtLink>
+                <NuxtLink :to="`/projects#${project.slug}`" viewTransition>Projects</NuxtLink>
+                <NuxtLink :to="route.path" viewTransition>
+                    {{ project.title }}
+                </NuxtLink>
             </Breadcrumbs>
 
             <ProjectLayoutTitle :project="project" />
@@ -302,12 +304,15 @@ const route = useRoute()
 }
 
 :deep(.image-container) {
-    padding: 7.5rem;
-    margin: 2rem;
+    padding: 5rem !important;
     background-color: var(--backdrop-200);
     background-image:
         radial-gradient(circle, var(--backdrop-200), transparent),
         linear-gradient(0deg, transparent, var(--backdrop-200)), repeating-linear-gradient(90deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px), repeating-linear-gradient(0deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px);
+}
+
+:deep(.image-container a img:not(.external-link-indicator)) {
+    padding: 3rem !important;
 }
 
 @media (width < 700px) {
@@ -315,8 +320,5 @@ const route = useRoute()
         padding-left: 0;
     }
 
-    :deep(.image-container) {
-        padding: 3.5rem;
-    }
 }
 </style>

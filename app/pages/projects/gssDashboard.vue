@@ -1,14 +1,16 @@
 <template>
     <main class="project">
         <div class="banner">
-            <img :src="project.image" :alt="project.imageAlt" style="view-transition-name: project-image-cssCat">
+            <img :src="project.image" :alt="project.imageAlt" style="view-transition-name: project-image-gssDashboard">
         </div>
         <div class="container vertical-lines">
 
             <Breadcrumbs>
                 <NuxtLink to="/" viewTransition>Home</NuxtLink>
-                <NuxtLink to="/projects" viewTransition>Projects</NuxtLink>
-                <NuxtLink :to="route.path" viewTransition>{{ project.title }}</NuxtLink>
+                <NuxtLink :to="`/projects#${project.slug}`" viewTransition>Projects</NuxtLink>
+                <NuxtLink :to="route.path" viewTransition>
+                    {{ project.title }}
+                </NuxtLink>
             </Breadcrumbs>
 
             <ProjectLayoutTitle :project="project" />
@@ -149,7 +151,7 @@
                         shearing and
                         rotation to transform it into the correct isometric angle:
                     </p>
-                    <ul role="list">
+                    <ul>
                         <li> <code class="snippet">Object > Transform > Scale Vertical: 86.602%</code></li>
                         <li> <code class="snippet">Object > Transform > Shear Angle: -30°</code></li>
                         <li> <code class="snippet">Object > Transform > Rotate Angle: 30°</code></li>
@@ -279,21 +281,13 @@ const route = useRoute()
 }
 
 :deep(.image-container) {
-    padding: 7.5rem;
-    margin: 2rem;
-    background-color: var(--backdrop-200);
-    background-image:
-        radial-gradient(circle, var(--backdrop-200), transparent),
-        linear-gradient(0deg, transparent, var(--backdrop-200)), repeating-linear-gradient(90deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px), repeating-linear-gradient(0deg, transparent, transparent 20px, var(--background-solid) 20px, var(--background-solid) 21px);
+    background-color: #002D27;
+    background-image: url('/images/gss-pattern.png');
 }
 
 @media (width < 700px) {
     .container .project-media {
         padding-left: 0;
-    }
-
-    :deep(.image-container) {
-        padding: 3.5rem;
     }
 }
 </style>

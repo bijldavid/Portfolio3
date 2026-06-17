@@ -1,6 +1,8 @@
 <template>
     <header :class="{ 'is-scrolled': isScrolled }" style="view-transition-name: site-header;">
-        <img src="/images/db-logo.png" alt="David Bijl Logo">
+        <a href="/">
+            <img src="/images/db-logo.png" alt="David Bijl Logo">
+        </a>
     </header>
 </template>
 

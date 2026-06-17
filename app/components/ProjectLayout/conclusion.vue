@@ -22,7 +22,10 @@
         </div>
 
         <div class="image-container">
-            <img :src="`/images/${project.slug}.png`" :alt="project.title">
+            <a :href="projectLink" target="_blank" rel="noopener noreferrer">
+                <img class="external-link-indicator" src="/images/external-link.png" alt="External link">
+                <img :src="`/images/${project.slug}-final.png`" :alt="project.title">
+            </a>
         </div>
 
     </section>
@@ -91,6 +94,42 @@ section .image-container {
     place-items: center;
     margin: 2rem;
     border: 1px solid var(--background-grid);
+
+    padding: 3rem;
+    margin: 2rem;
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+section .image-container a {
+    position: relative;
+    --timing-function: linear(0, 0.002 0.3%, 0.01 0.7%, 0.02 1%, 0.038 1.4%, 0.09 2.2%, 0.158 3%, 0.316 4.5%, 0.651 7.3%, 0.787 8.5%, 0.909 9.7%, 1.013 10.9%, 1.096 12.1%, 1.129 12.7%, 1.158 13.3%, 1.181 13.9%, 1.199 14.5%, 1.213 15.1%, 1.223 15.8%, 1.227 16.5%, 1.227 17.2%, 1.221 18%, 1.21 18.8%, 1.194 19.7%, 1.173 20.6%, 1.055 25%, 1.027 26.2%, 1.004 27.3%, 0.982 28.6%, 0.966 29.9%, 0.955 31.2%, 0.949 32.5%, 0.948 34%, 0.952 35.6%, 0.961 37.4%, 0.987 41.8%, 0.999 44%, 1.007 46.5%, 1.011 49%, 1.011 52.4%, 1 60.6%, 0.997 65.4%, 1.001 81.7%, 1);
+    scale: 1;
+    transition: scale 1s var(--timing-function);
+}
+
+section .image-container a .external-link-indicator {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 2rem;
+    width: 2rem;
+    padding: .5rem;
+    background: var(--backdrop-200);
+    border: 2px solid var(--border-400);
+    border-radius: 5px;
+    corner-shape: bevel;
+    z-index: 10;
+}
+
+section .image-container a img:not(.external-link-indicator) {
+    border-radius: 15px;
+    corner-shape: bevel;
+    filter: drop-shadow(0 0 10px #0000001a);
+}
+
+section .image-container a:hover {
+    scale: 1.05;
 }
 
 section .project-navigation {
@@ -156,15 +195,6 @@ section .project-navigation a:hover::before {
         padding-inline: 2rem;
         padding-block: 3rem;
         border-right: none;
-    }
-
-    section .content-container p {
-        position: relative;
-        font-family: 'poppins', sans-serif;
-        font-size: var(--p-size);
-        font-weight: 400;
-        line-height: 1.75em;
-        padding-bottom: 3rem;
     }
 
     section .content-container p::after {

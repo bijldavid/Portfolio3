@@ -170,12 +170,19 @@ onMounted(async () => {
 .code-block {
     min-width: 100%;
     background: #25221f;
-    border: 1px solid var(--backdrop-200);
     margin-block: .5rem;
     border-radius: 10px;
     corner-shape: bevel;
     padding: 2rem;
+}
 
+.code-block > * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.code-block::-webkit-scrollbar > * {
+    display: none;
 }
 
 .code-block pre {
