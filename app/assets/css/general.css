@@ -71,6 +71,10 @@ strong {
     font-weight: 500;
 }
 
+p {
+    text-wrap: pretty;
+}
+
 @media (width < 700px) {
     .container {
         --inline-offset: 1rem;

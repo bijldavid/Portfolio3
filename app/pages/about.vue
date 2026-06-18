@@ -367,6 +367,7 @@ const hideTooltip = () => {
 .container section:nth-of-type(1) .content-container h2 {
     font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
+    line-height: 1.5em;
     font-weight: 400;
     color: var(--background-solid);
     height: max-content
@@ -412,6 +413,7 @@ const hideTooltip = () => {
     border-bottom: 1px solid var(--background-grid);
     font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
+    line-height: 1.5em;
     font-weight: 400;
     color: var(--text);
 }
@@ -563,6 +565,7 @@ const hideTooltip = () => {
 .container .work-experience .text-container h2 {
     font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
+    line-height: 1.5em;
     font-weight: 400;
     color: var(--text);
     height: max-content
@@ -710,6 +713,10 @@ const hideTooltip = () => {
         left: 1.5rem;
         translate: -50% -50%;
         rotate: 45deg;
+    }
+
+    .container section:nth-of-type(1) .content-container {
+        padding: 2rem;
     }
 
 

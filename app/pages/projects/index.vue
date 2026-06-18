@@ -106,7 +106,6 @@ const shouldRemoveProject = (tags) => {
 };
 
 onMounted(() => {
-
     const scrollParent = document.querySelector('.introduction ul');
     const gradient = document.querySelector('.gradient-overlay');
     const scrollButton = document.querySelector('.scroll-indicator');
@@ -126,7 +125,10 @@ onMounted(() => {
 
     if (scrollButton && scrollParent) {
         scrollButton.addEventListener('click', () => {
-            scrollParent.scrollTo({ top: scrollParent.scrollHeight, behavior: 'smooth' });
+            scrollParent.scrollTo({
+                top: scrollParent.scrollHeight,
+                behavior: 'smooth'
+            });
         });
     }
 
@@ -144,14 +146,36 @@ onMounted(() => {
         sentinel.style.cssText = 'position:absolute;top:0;height:1px;width:100%;pointer-events:none;';
         fieldset.parentElement.insertBefore(sentinel, fieldset);
 
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                fieldset.classList.toggle('is-sticky', !entry.isIntersecting);
-            },
-            { rootMargin: '-100px 0px 0px 0px', threshold: 0 }
-        );
+        let sentinelDocTop = 0;
+        let ticking = false;
 
-        observer.observe(sentinel);
+        const offset = 50;
+
+        const measure = () => {
+            sentinelDocTop = sentinel.getBoundingClientRect().top + window.scrollY;
+        };
+
+        const onScroll = () => {
+            if (ticking) return;
+
+            ticking = true;
+
+            requestAnimationFrame(() => {
+                fieldset.classList.toggle(
+                    'is-sticky',
+                    window.scrollY >= sentinelDocTop - offset
+                );
+
+                ticking = false;
+            });
+        };
+
+        measure();
+        onScroll();
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', measure);
+        window.addEventListener('orientationchange', measure);
     }
 });
 </script>
@@ -324,6 +348,7 @@ onMounted(() => {
 .container section:nth-of-type(1) .introduction div h2 {
     font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
+    line-height: 1.5em;
     font-weight: 400;
     color: var(--text);
 }

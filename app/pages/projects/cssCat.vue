@@ -316,5 +316,12 @@ const route = useRoute()
         padding-left: 0;
     }
 
+    :deep(.image-container) {
+        padding: 2rem !important;
+    }
+
+    :deep(.image-container a img:not(.external-link-indicator)) {
+        padding: 2rem !important;
+    }
 }
 </style>

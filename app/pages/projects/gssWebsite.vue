@@ -270,6 +270,10 @@ const route = useRoute()
     padding-left: calc(30px + 3rem);
 }
 
+:deep(.project-navigation a:last-of-type) {
+    display: none;
+}
+
 @media (width < 700px) {
     .container .project-media {
         padding-left: 0;

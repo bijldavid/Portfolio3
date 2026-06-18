@@ -16,7 +16,7 @@ export const projects = [
         slug: 'endusoWebsite',
         title: 'Enduso website',
         number: '002',
-        image: '/images/css-cat.png',
+        image: '/images/enduso-logo.png',
         imageAlt: 'Enduso website',
         description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
         tags: ['Design'],
@@ -68,8 +68,8 @@ export const projects = [
         imageAlt: 'Man met de hamer',
         description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
         tags: ['Code'],
-        projectLink: 'https://bijldavid.github.io/CSS-to-the-rescue/',
-        projectGithub:'https://github.com/bijldavid/CSS-to-the-rescue',
+        projectLink: 'https://www.demanmetdehamer.nl/',
+        projectGithub:'https://github.com/Christian199815/De_Man_Met_De_Code',
     },
     {
         id: 'project-7',
@@ -113,5 +113,6 @@ export const cssCatProject = projects[0];
 export const endusoWebsiteProject = projects[1];
 export const gssWebsiteProject = projects[2];
 export const delayFinderProject = projects[4];
+export const manMDHamerProject = projects[5];
 export const qwellWebsiteProject = projects[6];
 export const gssDashboardProject = projects[7];

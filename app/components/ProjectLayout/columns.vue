@@ -72,6 +72,7 @@ onBeforeUnmount(() => {
     left: 5rem;
     font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
+    line-height: 1.5em;
     font-weight: 400;
     color: var(--text);
     height: max-content;

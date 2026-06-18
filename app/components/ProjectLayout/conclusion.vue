@@ -60,6 +60,7 @@ section .content-container {
 section .content-container h2 {
     font-family: 'poppins', sans-serif;
     font-size: var(--h2-size);
+    line-height: 1.5em;
     font-weight: 400;
     color: var(--text);
     padding-bottom: 1rem;
@@ -181,13 +182,18 @@ section .project-navigation a:hover::before {
     width: 100%;
 }
 
-@media (width < 900px) {
+@media (width < 850px) {
     section {
         grid-template-columns: 1fr;
     }
 
     section .content-container {
-        border-bottom: 1px solid var(--background-grid);
+        order: 2;
+        border-top: 1px solid var(--background-grid);
+    }
+    
+    section .image-container {
+        order: 1;
     }
 }
 
