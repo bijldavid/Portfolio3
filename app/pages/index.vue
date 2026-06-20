@@ -61,13 +61,17 @@ definePageMeta({ layout: 'home' })
 
 
 
-<style>
+<style scoped>
 .index {
     min-height: 100vh;
     min-width: 100vw;
     perspective: 60em;
     perspective-origin: center center;
     overflow: hidden;
+}
+
+.index p {
+    text-wrap: nowrap;
 }
 
 .pixelate {

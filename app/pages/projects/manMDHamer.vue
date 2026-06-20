@@ -1,7 +1,7 @@
 <template>
     <main class="project">
         <div class="banner">
-            <img :src="project.image" :alt="project.imageAlt" style="view-transition-name: project-image-delayFinder">
+            <img :src="project.image" :alt="project.imageAlt" style="view-transition-name: project-image-manMDHamer">
         </div>
 
         <div class="container vertical-lines">

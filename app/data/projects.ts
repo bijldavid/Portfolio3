@@ -20,8 +20,8 @@ export const projects = [
         imageAlt: 'Enduso website',
         description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
         tags: ['Design'],
-        projectLink: 'https://bijldavid.github.io/CSS-to-the-rescue/',
-        projectGithub:'https://github.com/bijldavid/CSS-to-the-rescue',
+        projectLink: 'https://enduso-website.vercel.app/',
+        projectGithub:'https://github.com/bijldavid/enduso-website',
     },
     {
         id: 'project-3',
@@ -32,20 +32,20 @@ export const projects = [
         imageAlt: 'GSS website',
         description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
         tags: ['Design', 'Code'],
-        projectLink: 'https://bijldavid.github.io/CSS-to-the-rescue/',
-        projectGithub:'https://github.com/bijldavid/CSS-to-the-rescue'
+        projectLink: 'https://gridsupportsolutions.nl/',
+        projectGithub:''
     },
     {
         id: 'project-4',
-        slug: 'netCongestion',
-        title: 'Net congestion',
+        slug: 'bTripleAnimation',
+        title: 'B-Triple animation',
         number: '004',
-        image: '/images/css-cat.png',
-        imageAlt: 'Net congestion',
+        image: '/images/b-triple-animation.png',
+        imageAlt: 'B-Triple animation',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         tags: ['Video'],
-        projectLink: 'https://bijldavid.github.io/CSS-to-the-rescue/',
-        projectGithub:'https://github.com/bijldavid/CSS-to-the-rescue',
+        projectLink: 'https://www.youtube.com/watch?v=1SEElSudrfo&feature=youtu.be',
+        projectGithub:'',
     },
     {
         id: 'project-5',
@@ -64,7 +64,7 @@ export const projects = [
         slug: 'manMDHamer',
         title: 'Man m/d hamer',
         number: '006',
-        image: '/images/css-cat.png',
+        image: '/images/manMDHamer-logo.png',
         imageAlt: 'Man met de hamer',
         description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
         tags: ['Code'],
@@ -100,18 +100,19 @@ export const projects = [
         slug: 'cerulean',
         title: 'Cerulean',
         number: '009',
-        image: '/images/css-cat.png',
+        image: '/images/cerulean-logo.png',
         imageAlt: 'Cerulean',
         description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
         tags: ['Video'],
-        projectLink: 'https://bijldavid.github.io/CSS-to-the-rescue/',
-        projectGithub:'https://github.com/bijldavid/CSS-to-the-rescue',
+        projectLink: 'https://www.youtube.com/@cerulean9880/',
+        projectGithub:'',
     }
 ];
 
 export const cssCatProject = projects[0];
 export const endusoWebsiteProject = projects[1];
 export const gssWebsiteProject = projects[2];
+export const bTripleAnimationProject = projects[3];
 export const delayFinderProject = projects[4];
 export const manMDHamerProject = projects[5];
 export const qwellWebsiteProject = projects[6];
