@@ -16,12 +16,13 @@
 
                 <div class="content-container">
                     <h2><span>Who</span> is David?</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, quidem dolor non
-                        perferendis, velit perspiciatis, tempore at quam nesciunt a et ab nisi enim voluptatem officiis
-                        dolorem odio quisquam ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                        inventore sequi praesentium corporis laborum. Necessitatibus, laboriosam tenetur? Cumque earum
-                        molestias asperiores odit, est recusandae temporibus, quaerat, eum porro consectetur similique.
-                    </p>
+                    <p> I'm David Bijl, a 21-year-old Communication and Multimedia Design student currently in the final
+                        year of my bachelor's degree. I see myself as a front-end developer with an eye for design. I
+                        enjoy both sides of the process, although during my studies I have focused on front-ending the
+                        most. CSS is
+                        easily my favourite part of front-end, and I love using it to create interesting and polished
+                        experiences for the web. When I'm not designing or coding, I enjoy playing video games, editing
+                        videos, going to the gym and spending time with friends and family.</p>
                 </div>
             </section>
 
@@ -61,12 +62,13 @@
             <section class="work-experience">
                 <div class="text-container">
                     <h2>Work experience</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quidem eum magni nesciunt
-                        repellat, exercitationem dicta ex atque obcaecati animi. Ipsa, quasi suscipit fugit labore
-                        voluptatibus commodi dolorum consequuntur illo. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Consectetur accusamus ipsa quasi doloribus ad porro quae eaque exercitationem
-                        voluptates tempora id repellat, laudantium quo laboriosam eligendi excepturi, fugiat consequatur
-                        accusantium.</p>
+                    <p>I started making websites while I was still in high school, mostly using Shopify templates.
+                        Looking back, that probably sparked my interest in web design. After graduating, I began my
+                        bachelor's degree in Communication and Multimedia Design and joined the marketing team at Yesss
+                        Electrical as a designer. Since then, I have worked as a student assistant at the HvA and
+                        completed internships at UWV and Grid Support Solutions. GSS later offered me a position, and I
+                        recently joined the company as their newest front-end developer.
+                    </p>
                 </div>
                 <div class="timeline">
                     <div class="segments">
