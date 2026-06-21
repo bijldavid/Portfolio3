@@ -127,6 +127,8 @@
                         character of the company.
                     </p>
 
+                    <img  class="project-media" src="/images/enduso-hero.png" alt="Enduso hero section">
+
                 </ProjectLayoutColumnItem>
 
                 <ProjectLayoutColumnItem index="03">
@@ -265,7 +267,7 @@
                         concept to life and introducing the visual identity as soon as the website loads.
                     </p>
 
-                    <video class="project-media" autoplay loop muted playsinline>
+                    <video autoplay loop muted playsinline>
                         <source src="/images/bar-animation.mov" type="video/quicktime; codecs=hvc1">
                         <source src="/images/bar-animation.webm" type="video/webm; codecs=vp9">
                     </video>
@@ -329,12 +331,9 @@ const route = useRoute()
 }
 
 .container .project-media {
-    padding-left: calc(30px + 3rem);
-}
-
-@media (width < 700px) {
-    .container .project-media {
-        padding-left: 0;
-    }
+    border-radius: 10px;
+    corner-shape: bevel;
+    overflow: hidden;
+    margin-block: 1rem;
 }
 </style>

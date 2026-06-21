@@ -21,10 +21,11 @@
                     <button class="scroll-indicator"></button>
 
                     <div>
-                        <h2>More about my projects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae repudiandae necessitatibus
-                            aut voluptate odit magni provident praesentium quibusdam, eaque aliquid! Quisquam illo
-                            doloribus ratione nobis reiciendis neque ut vel facere.</p>
+                        <h2>The work I'm proud of</h2>
+                        <p>I'm proud of the variety in these projects. They show that I can move between design,
+                            front-end development, motion design and video editing, depending on what a project needs.
+                            Some are more technical, others more visual, but together they give a good overview of the
+                            kind of work I enjoy making.</p>
                     </div>
                 </div>
             </section>
@@ -572,7 +573,7 @@ onMounted(() => {
 
 .container section:nth-of-type(2)>ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(270px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr));
     gap: 2rem 3px;
     padding: 1rem var(--inline-offset) 3rem var(--inline-offset);
 }

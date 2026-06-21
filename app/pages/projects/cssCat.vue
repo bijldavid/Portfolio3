@@ -132,12 +132,13 @@ div {
 }
 `" />
 
+                    <video class="project-media" autoplay loop muted playsinline>
+                        <source src="/images/cube-alpha.mov" type="video/quicktime; codecs=hvc1">
+                        <source src="/images/cube.webm" type="video/webm; codecs=vp9">
+                    </video>
+
                 </ProjectLayoutColumnItem>
 
-                <video class="project-media" autoplay loop muted playsinline>
-                    <source src="/images/cube-alpha.mov" type="video/quicktime; codecs=hvc1">
-                    <source src="/images/cube.webm" type="video/webm; codecs=vp9">
-                </video>
 
                 <ProjectLayoutColumnItem index="02">
                     <p>
@@ -156,7 +157,7 @@ div {
                     </p>
 
                     <ProjectLayoutCodeBlock lang="css" :code="`
-/* normale dimensies */
+/* default dimensions */
 --torso-x: calc(var(--cat-x) * 4);
 --torso-y: calc(var(--cat-y) * 6);
 --torso-z: calc(var(--cat-z) * 16);
@@ -191,7 +192,7 @@ div {
                     </p>
 
                     <ProjectLayoutCodeBlock lang="css" :code="`
-/* code voor het uitklap systeem */
+/* code for the collapsible menu */
 section:has(> div > input:checked) form {
     display: block;
     display: flex;
@@ -215,16 +216,18 @@ section:has(> div > input:checked) form {
                     </p>
 
                     <ProjectLayoutCodeBlock lang="css" :code="`
-/* uiteindelijke oplossing */
+/* final solution */
 --walk-progress: calc((var(--unitless-walk) + 5) / 10);
 --walk-s: calc(var(--walk-progress) * -2s);
 `" />
+
+                    <video class="project-media" autoplay loop muted playsinline>
+                        <source src="/images/css-cat-alpha.mov" type="video/quicktime; codecs=hvc1">
+                        <source src="/images/css-cat.webm" type="video/webm; codecs=vp9">
+                    </video>
+
                 </ProjectLayoutColumnItem>
 
-                <video class="project-media" autoplay loop muted playsinline>
-                    <source src="/images/css-cat-alpha.mov" type="video/quicktime; codecs=hvc1">
-                    <source src="/images/css-cat.webm" type="video/webm; codecs=vp9">
-                </video>
 
                 <ProjectLayoutColumnItem index="06">
                     <p>
@@ -300,7 +303,10 @@ const route = useRoute()
 }
 
 .container .project-media {
-    padding-left: calc(30px + 3rem);
+    border-radius: 10px;
+    corner-shape: bevel;
+    overflow: hidden;
+    margin-block: 1rem;
 }
 
 :deep(.image-container) {
@@ -312,9 +318,6 @@ const route = useRoute()
 }
 
 @media (width < 700px) {
-    .container .project-media {
-        padding-left: 0;
-    }
 
     :deep(.image-container) {
         padding: 2rem !important;

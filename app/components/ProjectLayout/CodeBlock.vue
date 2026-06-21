@@ -198,6 +198,6 @@ code.snippet {
     color: var(--backdrop-600);
     padding: 0.25em 0.5em;
     font-size: var(--small-size);
-    margin-inline: .5em;
+    margin-inline: .1em;
 }
 </style>

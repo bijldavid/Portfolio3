@@ -6,10 +6,10 @@ export const projects = [
         number: '001',
         image: '/images/css-cat.png',
         imageAlt: 'CSS Cat',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        description: 'A 3D Minecraft cat built and animated entirely with CSS.',
         tags: ['Design', 'Code'],
         projectLink: 'https://bijldavid.github.io/CSS-to-the-rescue/',
-        projectGithub:'https://github.com/bijldavid/CSS-to-the-rescue',
+        projectGithub: 'https://github.com/bijldavid/CSS-to-the-rescue',
     },
     {
         id: 'project-2',
@@ -18,10 +18,10 @@ export const projects = [
         number: '002',
         image: '/images/enduso-logo.png',
         imageAlt: 'Enduso website',
-        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+        description: 'A responsive energy website with bold branding and motion.',
         tags: ['Design'],
         projectLink: 'https://enduso-website.vercel.app/',
-        projectGithub:'https://github.com/bijldavid/enduso-website',
+        projectGithub: 'https://github.com/bijldavid/enduso-website',
     },
     {
         id: 'project-3',
@@ -30,22 +30,22 @@ export const projects = [
         number: '003',
         image: '/images/gss-logo.png',
         imageAlt: 'GSS website',
-        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+        description: 'A complete brand identity and website for an energy company.',
         tags: ['Design', 'Code'],
         projectLink: 'https://gridsupportsolutions.nl/',
-        projectGithub:''
+        projectGithub: '',
     },
     {
         id: 'project-4',
-        slug: 'bTripleAnimation',
-        title: 'B-Triple animation',
+        slug: 'bTriple',
+        title: 'B-Triple',
         number: '004',
-        image: '/images/b-triple-animation.png',
-        imageAlt: 'B-Triple animation',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        image: '/images/b-triple.png',
+        imageAlt: 'B-Triple',
+        description: 'An animated explainer about net congestion and the B-Triple.',
         tags: ['Video'],
         projectLink: 'https://www.youtube.com/watch?v=1SEElSudrfo&feature=youtu.be',
-        projectGithub:'',
+        projectGithub: '',
     },
     {
         id: 'project-5',
@@ -54,10 +54,10 @@ export const projects = [
         number: '005',
         image: '/images/delay-finder.png',
         imageAlt: 'Delay finder',
-        description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'A D3 dashboard visualising train delays using live NS data.',
         tags: ['Code'],
         projectLink: 'https://information-design-tech.onrender.com/',
-        projectGithub:'https://github.com/bijldavid/Information-design-tech',
+        projectGithub: 'https://github.com/bijldavid/Information-design-tech',
     },
     {
         id: 'project-6',
@@ -66,10 +66,10 @@ export const projects = [
         number: '006',
         image: '/images/manMDHamer-logo.png',
         imageAlt: 'Man met de hamer',
-        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+        description: 'A playful theatre-inspired portfolio built for a real client.',
         tags: ['Code'],
         projectLink: 'https://www.demanmetdehamer.nl/',
-        projectGithub:'https://github.com/Christian199815/De_Man_Met_De_Code',
+        projectGithub: 'https://github.com/Christian199815/De_Man_Met_De_Code',
     },
     {
         id: 'project-7',
@@ -78,10 +78,10 @@ export const projects = [
         number: '007',
         image: '/images/qwell-logo.png',
         imageAlt: 'Qwell website',
-        description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'A premium website concept for a high-capacity battery brand.',
         tags: ['Design', 'Code'],
         projectLink: 'https://bijldavid.github.io/CSS-to-the-rescue/',
-        projectGithub:'https://github.com/bijldavid/CSS-to-the-rescue',
+        projectGithub: 'https://github.com/bijldavid/CSS-to-the-rescue',
     },
     {
         id: 'project-8',
@@ -90,10 +90,10 @@ export const projects = [
         number: '008',
         image: '/images/gss-dashboard.png',
         imageAlt: 'GSS dashboard',
-        description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'Isometric dashboard visualising energy flow between assets.',
         tags: ['Design', 'Code'],
-        projectLink: 'https://bijldavid.github.io/CSS-to-the-rescue/',
-        projectGithub:'https://github.com/bijldavid/CSS-to-the-rescue',
+        projectLink: 'https://power-flow-woad.vercel.app/',
+        projectGithub: 'https://github.com/bijldavid/power-flow',
     },
     {
         id: 'project-9',
@@ -102,18 +102,19 @@ export const projects = [
         number: '009',
         image: '/images/cerulean-logo.png',
         imageAlt: 'Cerulean',
-        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+        description: 'A TF2 YouTube channel focused on editing and motion design.',
         tags: ['Video'],
         projectLink: 'https://www.youtube.com/@cerulean9880/',
-        projectGithub:'',
-    }
+        projectGithub: '',
+    },
 ];
 
 export const cssCatProject = projects[0];
 export const endusoWebsiteProject = projects[1];
 export const gssWebsiteProject = projects[2];
-export const bTripleAnimationProject = projects[3];
+export const bTripleProject = projects[3];
 export const delayFinderProject = projects[4];
 export const manMDHamerProject = projects[5];
 export const qwellWebsiteProject = projects[6];
 export const gssDashboardProject = projects[7];
+export const ceruleanProject = projects[8];

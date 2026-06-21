@@ -124,6 +124,9 @@
                         next step was creating a visual identity that could bring the structure to life.
                     </p>
 
+                    <img class="project-media" src="/images/gss-wireframes.png"
+                        alt="The wireframes for the GSS website, showing the layout of the different sections and content blocks">
+
                 </ProjectLayoutColumnItem>
 
                 <ProjectLayoutColumnItem index="03">
@@ -144,6 +147,9 @@
                         This created a balanced palette that felt both technical and approachable.
                     </p>
 
+                    <img class="project-media" src="/images/gss-colors.png" alt="The colors used in the GSS website">
+
+
                 </ProjectLayoutColumnItem>
 
                 <ProjectLayoutColumnItem index="04">
@@ -158,6 +164,9 @@
                         infrastructure and
                         energy flows.
                     </p>
+
+                    <img class="project-media" src="/images/gss-iso.png" alt="The isometric style used in the GSS website">
+
 
                     <p>
                         The isometric style appears throughout the website, including the hero section and the icons
@@ -267,16 +276,13 @@ const route = useRoute()
 }
 
 .container .project-media {
-    padding-left: calc(30px + 3rem);
+    margin-block: 1rem;
+    border-radius: 10px;
+    corner-shape: bevel;
+    overflow: hidden;
 }
 
 :deep(.project-navigation a:last-of-type) {
     display: none;
-}
-
-@media (width < 700px) {
-    .container .project-media {
-        padding-left: 0;
-    }
 }
 </style>

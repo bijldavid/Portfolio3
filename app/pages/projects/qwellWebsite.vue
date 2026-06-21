@@ -256,13 +256,8 @@ const route = useRoute()
 }
 
 .container .project-media {
-    padding-left: calc(30px + 3rem);
-}
-
-@media (width < 700px) {
-    .container .project-media {
-        padding-left: 0;
-    }
-
+    border-radius: 10px;
+    corner-shape: bevel;
+    overflow: hidden;
 }
 </style>

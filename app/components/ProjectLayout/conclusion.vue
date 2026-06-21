@@ -126,7 +126,7 @@ section .image-container a .external-link-indicator {
 }
 
 section .image-container a img:not(.external-link-indicator) {
-    border-radius: 15px;
+    border-radius: 10px;
     corner-shape: bevel;
     filter: drop-shadow(0 0 10px #0000002c);
 }

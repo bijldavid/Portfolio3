@@ -95,6 +95,8 @@
                         cut-outs, textures and photographic compositions.
                     </p>
 
+                    <img class="project-media" src="/images/mmdh-styles.png" alt="">
+
                     <p>
                         The final direction combined an actual theatre interior with a collection of playful props
                         placed across the
@@ -165,6 +167,9 @@
                         workspace
                         while remaining consistent with the handmade character of the website.
                     </p>
+
+                    <img class="project-media" src="/images/mmdh-about.png" alt="">
+
 
                 </ProjectLayoutColumnItem>
 
@@ -241,12 +246,9 @@ const route = useRoute()
 }
 
 .container .project-media {
-    padding-left: calc(30px + 3rem);
-}
-
-@media (width < 700px) {
-    .container .project-media {
-        padding-left: 0;
-    }
+    margin-block: 1rem;
+    border-radius: 10px;
+    corner-shape: bevel;
+    overflow: hidden;
 }
 </style>
