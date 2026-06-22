@@ -1,6 +1,6 @@
 <template>
     <div class="project-final-result">
-        <img :src="`/images/${project.slug}-16-7.png`" :alt="project.title">
+        <img :src="`/images/${project.slug}-16-7.webp`" :alt="project.title">
     </div>
 </template>
 

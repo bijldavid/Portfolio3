@@ -8,7 +8,7 @@
             <div class="image-container">
                 <ul>
                     <li v-for="tag in tags.slice(0, 3)" :key="tag" :class="tag.toLowerCase()">
-                        <img :src="`/images/${tag.toLowerCase()}.png`" :alt="tag">
+                        <img :src="`/images/${tag.toLowerCase()}.webp`" :alt="tag">
 
                         <p>{{ tag }}</p>
                     </li>
@@ -88,7 +88,7 @@ defineProps(['id', 'slug', 'title', 'number', 'image', 'imageAlt', 'description'
     aspect-ratio: 1;
 
     background-image: linear-gradient(var(--backdrop-200) 30%, transparent),
-        url(/images/iso-grid.png);
+        url(/images/iso-grid.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

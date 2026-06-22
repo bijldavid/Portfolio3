@@ -2,7 +2,7 @@
     <footer class="reveal-ignore">
         <div class="container vertical-lines">
             <div class="left">
-                <img src="/images/db-logo-bright.png" alt="David Bijl Logo">
+                <img src="/images/db-logo-bright.webp" alt="David Bijl Logo">
             </div>
             <nav class="right">
                 <ul>
@@ -44,7 +44,7 @@ footer {
     background-image:
         radial-gradient(var(--border-400), transparent),
         linear-gradient(0deg, transparent, var(--border-400)),
-        url('/images/dot.png');
+        url('/images/dot.webp');
     background-size: 200%, 100%, 1rem;
     background-position: center;
     background-repeat: repeat;
@@ -84,7 +84,7 @@ footer .container .left::before {
     content: '';
     position: absolute;
     inset: 2rem;
-    background-image: url('/images/dot.png');
+    background-image: url('/images/dot.webp');
     background-size: .5rem;
     background-repeat: repeat;
     z-index: -1;
@@ -176,19 +176,19 @@ footer .container .right ul:nth-of-type(2) li a:hover {
 }
 
 footer .container .right ul:nth-of-type(2) li:nth-of-type(1) a::before {
-    background-image: url('/images/github-footer.png');
+    background-image: url('/images/github-footer.webp');
 }
 
 footer .container .right ul:nth-of-type(2) li:nth-of-type(2) a::before {
-    background-image: url('/images/linkedin-footer.png');
+    background-image: url('/images/linkedin-footer.webp');
 }
 
 footer .container .right ul:nth-of-type(2) li:nth-of-type(1) a:hover::before {
-    background-image: url('/images/github-footer-hover.png');
+    background-image: url('/images/github-footer-hover.webp');
 }
 
 footer .container .right ul:nth-of-type(2) li:nth-of-type(2) a:hover::before {
-    background-image: url('/images/linkedin-footer-hover.png');
+    background-image: url('/images/linkedin-footer-hover.webp');
 }
 
 footer .container>p {

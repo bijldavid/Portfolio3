@@ -11,7 +11,7 @@
                 <h1 class="horizontal-lines reveal-ignore">About Me</h1>
 
                 <div class="image-container">
-                    <img src="" alt="David">
+                    <img src="/images/about-banner.webp" alt="David">
                 </div>
 
                 <div class="content-container">
@@ -120,37 +120,37 @@ const designSkills = ref([
     {
         designSkillTitle: 'Figma',
         designSkillPercentage: '60%',
-        designSkillImage: '/images/figma.png',
+        designSkillImage: '/images/figma.webp',
     },
     {
         designSkillTitle: 'Photoshop',
         designSkillPercentage: '90%',
-        designSkillImage: '/images/ps.png',
+        designSkillImage: '/images/ps.webp',
     },
     {
         designSkillTitle: 'Illustrator',
         designSkillPercentage: '60%',
-        designSkillImage: '/images/ai.png',
+        designSkillImage: '/images/ai.webp',
     },
     {
         designSkillTitle: 'Indesign',
         designSkillPercentage: '60%',
-        designSkillImage: '/images/id.png',
+        designSkillImage: '/images/id.webp',
     },
     {
         designSkillTitle: 'Premiere Pro',
         designSkillPercentage: '90%',
-        designSkillImage: '/images/pr.png',
+        designSkillImage: '/images/pr.webp',
     },
     {
         designSkillTitle: 'After effects',
         designSkillPercentage: '90%',
-        designSkillImage: '/images/ae.png',
+        designSkillImage: '/images/ae.webp',
     },
     {
         designSkillTitle: 'Blender',
         designSkillPercentage: '30%',
-        designSkillImage: '/images/blender.png',
+        designSkillImage: '/images/blender.webp',
     }
 ]);
 
@@ -158,27 +158,27 @@ const devSkills = ref([
     {
         devSkillTitle: 'HTML',
         devSkillPercentage: '90%',
-        devSkillImage: '/images/html.png',
+        devSkillImage: '/images/html.webp',
     },
     {
         devSkillTitle: 'CSS',
         devSkillPercentage: '90%',
-        devSkillImage: '/images/css.png',
+        devSkillImage: '/images/css.webp',
     },
     {
         devSkillTitle: 'JavaScript',
         devSkillPercentage: '60%',
-        devSkillImage: '/images/js.png',
+        devSkillImage: '/images/js.webp',
     },
     {
         devSkillTitle: 'Svelte',
         devSkillPercentage: '70%',
-        devSkillImage: '/images/svelte.png',
+        devSkillImage: '/images/svelte.webp',
     },
     {
         devSkillTitle: 'Nuxt',
         devSkillPercentage: '90%',
-        devSkillImage: '/images/nuxt.png',
+        devSkillImage: '/images/nuxt.webp',
     }
 ]);
 
@@ -347,6 +347,18 @@ const hideTooltip = () => {
 
 .container section:nth-of-type(1) .image-container {
     height: 400px;
+}
+
+.container section:nth-of-type(1) .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (width < 700px) {
+    .container section:nth-of-type(1) .image-container {
+        height: 300px;
+    }
 }
 
 

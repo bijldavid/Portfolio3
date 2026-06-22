@@ -3,7 +3,7 @@
         <div class="title-container horizontal-lines reveal-ignore">
             <h1>{{ project.title }}</h1>
             <div v-for="tag in project.tags" :key="tag">
-                <img :src="`/images/${tag.toLowerCase()}-red.png`" :alt="tag">
+                <img :src="`/images/${tag.toLowerCase()}-red.webp`" :alt="tag">
                 <p>{{ tag }}</p>
             </div>
         </div>

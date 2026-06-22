@@ -15,7 +15,7 @@
 
                 <div class="label">
                     <p>Open CV</p>
-                    <img src="/images/external-link.png" alt="External Link">
+                    <img src="/images/external-link.webp" alt="External Link">
                 </div>
             </li>
             <li>

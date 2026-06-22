@@ -9,7 +9,7 @@
                     <!-- top -->
                     <div>
                         <div class="picture">
-                            <img src="/images/davidbijl.png" alt="">
+                            <img src="/images/davidbijl.webp" alt="">
                         </div>
                     </div>
                     <!-- bottom -->

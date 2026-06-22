@@ -256,7 +256,7 @@ onMounted(() => {
     background: var(--backdrop-200);
     border: 2px solid var(--border-400);
 
-    background-image: url(/images/scroll-arrow.png);
+    background-image: url(/images/scroll-arrow.webp);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
@@ -467,15 +467,15 @@ onMounted(() => {
 }
 
 .container section:nth-of-type(2) fieldset label span[data-type="design"]::before {
-    background-image: url(/images/design.png);
+    background-image: url(/images/design.webp);
 }
 
 .container section:nth-of-type(2) fieldset label span[data-type="code"]::before {
-    background-image: url(/images/code.png);
+    background-image: url(/images/code.webp);
 }
 
 .container section:nth-of-type(2) fieldset label span[data-type="video"]::before {
-    background-image: url(/images/video.png);
+    background-image: url(/images/video.webp);
 }
 
 .container section:nth-of-type(2) fieldset label input {
@@ -544,15 +544,15 @@ onMounted(() => {
 }
 
 .container section:nth-of-type(2) fieldset label:has(input:checked) span[data-type="design"]::before {
-    background-image: url(/images/design-red.png);
+    background-image: url(/images/design-red.webp);
 }
 
 .container section:nth-of-type(2) fieldset label:has(input:checked) span[data-type="code"]::before {
-    background-image: url(/images/code-red.png);
+    background-image: url(/images/code-red.webp);
 }
 
 .container section:nth-of-type(2) fieldset label:has(input:checked) span[data-type="video"]::before {
-    background-image: url(/images/video-red.png);
+    background-image: url(/images/video-red.webp);
 }
 
 .first {
@@ -701,7 +701,7 @@ onMounted(() => {
 
 .projects .container section:nth-of-type(2):has(li:target)>ul>li:not(li:target) .image-container {
     background-image: linear-gradient(var(--background-solid) 30%, transparent),
-        url(/images/iso-grid.png);
+        url(/images/iso-grid.webp);
 }
 
 .projects li .card-upper .image-container::before {

@@ -127,7 +127,7 @@
                         character of the company.
                     </p>
 
-                    <img  class="project-media" src="/images/enduso-hero.png" alt="Enduso hero section">
+                    <img  class="project-media" src="/images/enduso-hero.webp" alt="Enduso hero section">
 
                 </ProjectLayoutColumnItem>
 
@@ -320,7 +320,7 @@ const route = useRoute()
     align-items: center;
     background-color: var(--backdrop-200);
     background-image: linear-gradient(var(--backdrop-200) 30%, transparent),
-        url('/images/repeating-grid.png');
+        url('/images/repeating-grid.webp');
     background-repeat: repeat no-repeat;
     background-size: 500px;
     border-bottom: 1px solid var(--background-grid);

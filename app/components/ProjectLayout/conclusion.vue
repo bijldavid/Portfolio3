@@ -23,8 +23,8 @@
 
         <div class="image-container">
             <a :href="projectLink" target="_blank" rel="noopener noreferrer">
-                <img class="external-link-indicator" src="/images/external-link.png" alt="External link">
-                <img :src="`/images/${project.slug}-final.png`" :alt="project.title">
+                <img class="external-link-indicator" src="/images/external-link.webp" alt="External link">
+                <img :src="`/images/${project.slug}-final.webp`" :alt="project.title">
             </a>
         </div>
 
@@ -160,7 +160,7 @@ section .project-navigation a::after {
     translate: 0 -50%;
     height: var(--small-size);
     width: var(--small-size);
-    background: url('/images/external-link.png');
+    background: url('/images/external-link.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
@@ -232,7 +232,7 @@ section .project-navigation a:hover::before {
     translate: 0 -50%;
     height: 2rem;
     width: 2rem;
-    background: url('/images/warning.png');
+    background: url('/images/warning.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;

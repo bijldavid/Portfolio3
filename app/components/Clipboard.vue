@@ -9,7 +9,7 @@
                 <!-- top -->
                 <div>
                     <div class="paper">
-                        <img src="/images/David_CV.png" alt="">
+                        <img src="/images/David_CV.webp" alt="">
                     </div>
                     <div class="clip">
                         <!-- front -->
@@ -335,7 +335,7 @@ ul li:nth-of-type(2) .rotator {
     height: 100%;
     translate: 0 0 calc(var(--y) / -2);
 
-    mask-image: url(../images/diamond.png);
+    mask-image: url(../images/diamond.webp);
     mask-mode: luminance;
     mask-position: center center;
     mask-size: 40% 100%;
@@ -353,7 +353,7 @@ ul li:nth-of-type(2) .rotator {
 
 .clipboard-model .clip .extention .cutout-cover-top::before {
     opacity: 0;
-    mask-image: url(../images/diamond.png);
+    mask-image: url(../images/diamond.webp);
     mask-mode: luminance;
     mask-position: center center;
     mask-size: 40% 100%;
@@ -366,7 +366,7 @@ ul li:nth-of-type(2) .rotator {
     height: 100%;
     translate: 0 0 0;
 
-    mask-image: url(../images/diamond.png);
+    mask-image: url(../images/diamond.webp);
     mask-mode: luminance;
     mask-position: center center;
     mask-size: 40% 100%;

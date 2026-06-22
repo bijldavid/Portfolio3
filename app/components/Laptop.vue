@@ -99,7 +99,7 @@
                         <div></div>
                         <!-- top -->
                         <div>
-                            <img class="apple-logo" src="/images/apple-logo.png">
+                            <img class="apple-logo" src="/images/apple-logo.webp">
                         </div>
                         <!-- bottom -->
                         <div>
