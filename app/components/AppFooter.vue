@@ -21,10 +21,10 @@
                 </ul>
                 <ul>
                     <li>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://github.com/bijldavid" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </li>
                     <li>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/david-bijl-b236a42b8/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </li>
                 </ul>
             </nav>

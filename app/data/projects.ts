@@ -80,8 +80,8 @@ export const projects = [
         imageAlt: 'Qwell website',
         description: 'A premium website concept for a high-capacity battery brand.',
         tags: ['Design', 'Code'],
-        projectLink: 'https://bijldavid.github.io/CSS-to-the-rescue/',
-        projectGithub: 'https://github.com/bijldavid/CSS-to-the-rescue',
+        projectLink: 'https://qwell-website.vercel.app//',
+        projectGithub: 'https://github.com/bijldavid/Qwell-website',
     },
     {
         id: 'project-8',
