@@ -268,3 +268,30 @@ p:not(.reveal-ignore) {
     translate: 0 28px !important;
     scale: 0.94 !important;
 }
+
+
+::view-transition-group(project-image-cssCat),
+::view-transition-group(project-image-endusoWebsite),
+::view-transition-group(project-image-gssWebsite),
+::view-transition-group(project-image-bTriple),
+::view-transition-group(project-image-delayFinder),
+::view-transition-group(project-image-manMDHamer),
+::view-transition-group(project-image-qwellWebsite),
+::view-transition-group(project-image-gssDashboard),
+::view-transition-group(project-image-cerulean) {
+    animation-duration: .6s;
+    animation-timing-function: ease;
+    z-index: 2;
+}
+
+::view-transition-group(project-card-cssCat),
+::view-transition-group(project-card-endusoWebsite),
+::view-transition-group(project-card-gssWebsite),
+::view-transition-group(project-card-bTriple),
+::view-transition-group(project-card-delayFinder),
+::view-transition-group(project-card-manMDHamer),
+::view-transition-group(project-card-qwellWebsite),
+::view-transition-group(project-card-gssDashboard),
+::view-transition-group(project-card-cerulean) {
+    z-index: 1;
+}
