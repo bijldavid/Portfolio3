@@ -308,7 +308,7 @@ Daarnaast laat ik zien hoe ervaren ik mijzelf inschat met verschillende creative
 
 De meest benoemenswaardige onderdelen van deze pagina zijn de tweesplitsing binnen My skills en de interactieve tooltip bij mijn werkervaring.
 
-<img src="./readme-assets/about-skills.png" width="30%"> <img src="./readme-assets/about-tooltip.png" width="30%">
+<img src="./readme-assets/about.png" width="100%">
 
 ## Herhalende components
 
