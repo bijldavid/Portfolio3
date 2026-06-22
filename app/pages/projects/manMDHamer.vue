@@ -95,7 +95,7 @@
                         cut-outs, textures and photographic compositions.
                     </p>
 
-                    <img class="project-media" src="/images/mmdh-styles.png" alt="">
+                    <img class="project-media" src="/images/mmdh-styles.webp" alt="">
 
                     <p>
                         The final direction combined an actual theatre interior with a collection of playful props
@@ -168,7 +168,7 @@
                         while remaining consistent with the handmade character of the website.
                     </p>
 
-                    <img class="project-media" src="/images/mmdh-about.png" alt="">
+                    <img class="project-media" src="/images/mmdh-about.webp" alt="">
 
 
                 </ProjectLayoutColumnItem>
@@ -235,7 +235,7 @@ const route = useRoute()
     align-items: center;
     background-color: var(--backdrop-200);
     background-image: linear-gradient(var(--backdrop-200) 30%, transparent),
-        url('/images/repeating-grid.png');
+        url('/images/repeating-grid.webp');
     background-repeat: repeat no-repeat;
     background-size: 500px;
     border-bottom: 1px solid var(--background-grid);

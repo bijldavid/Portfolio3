@@ -124,7 +124,7 @@
                         next step was creating a visual identity that could bring the structure to life.
                     </p>
 
-                    <img class="project-media" src="/images/gss-wireframes.png"
+                    <img class="project-media" src="/images/gss-wireframes.webp"
                         alt="The wireframes for the GSS website, showing the layout of the different sections and content blocks">
 
                 </ProjectLayoutColumnItem>
@@ -147,7 +147,7 @@
                         This created a balanced palette that felt both technical and approachable.
                     </p>
 
-                    <img class="project-media" src="/images/gss-colors.png" alt="The colors used in the GSS website">
+                    <img class="project-media" src="/images/gss-colors.webp" alt="The colors used in the GSS website">
 
 
                 </ProjectLayoutColumnItem>
@@ -165,7 +165,7 @@
                         energy flows.
                     </p>
 
-                    <img class="project-media" src="/images/gss-iso.png" alt="The isometric style used in the GSS website">
+                    <img class="project-media" src="/images/gss-iso.webp" alt="The isometric style used in the GSS website">
 
 
                     <p>
