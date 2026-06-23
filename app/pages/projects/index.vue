@@ -53,7 +53,8 @@
                 </fieldset>
                 <ul>
                     <ProjectCard v-for="(project, index) in projects" :key="index" v-bind="project"
-                        :class="{ remove: shouldRemoveProject(project.tags) }" />
+                        :class="{ remove: shouldRemoveProject(project.tags) }"
+                        :suppress-image-transition="suppressImageTransition" />
                 </ul>
             </section>
             <div class="empty horizontal-lines"></div>
@@ -67,6 +68,7 @@ import { ref, onMounted } from 'vue';
 import { projects } from '~/data/projects';
 
 const selectedCategories = ref([]);
+const suppressImageTransition = ref(false);
 
 const getCategoryOrderClass = (category) => {
     const order = selectedCategories.value.indexOf(category);
@@ -88,8 +90,14 @@ const toggleCategory = (category) => {
         : [...selectedCategories.value, category];
 
     if (typeof document !== 'undefined' && 'startViewTransition' in document) {
-        document.startViewTransition(() => {
+        suppressImageTransition.value = true;
+
+        const transition = document.startViewTransition(() => {
             selectedCategories.value = nextCategories;
+        });
+
+        transition.finished.then(() => {
+            suppressImageTransition.value = false;
         });
 
         return;

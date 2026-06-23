@@ -9,16 +9,16 @@
                 <ul>
                     <li v-for="tag in tags.slice(0, 3)" :key="tag" :class="tag.toLowerCase()">
                         <img :src="`/images/${tag.toLowerCase()}.webp`" :alt="tag">
-
                         <p>{{ tag }}</p>
                     </li>
                 </ul>
-                <img :src="image" :alt="imageAlt" :style="`view-transition-name: project-image-${slug}`">
+                <img :src="image" :alt="imageAlt"
+                    :style="{ viewTransitionName: suppressImageTransition ? undefined : `project-image-${slug}` }">
             </div>
         </div>
         <div class="card-lower vertical-lines">
             <p>{{ description }}</p>
-            <NuxtLink :to="`/projects/${slug}`" class="button" viewTransition>
+            <NuxtLink :to="`/projects/${slug}`" class="button" viewTransition @click="isNavigating = true">
                 <p>View project →</p>
             </NuxtLink>
         </div>
@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-defineProps(['id', 'slug', 'title', 'number', 'image', 'imageAlt', 'description', 'tags'])
+defineProps(['id', 'slug', 'title', 'number', 'image', 'imageAlt', 'description', 'tags', 'suppressImageTransition'])
 </script>
 
 <style>
