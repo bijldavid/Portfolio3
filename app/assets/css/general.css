@@ -270,6 +270,20 @@ p:not(.reveal-ignore) {
 }
 
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* VIEW TRANSITIONS */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+::view-transition-group(category-design),
+::view-transition-group(category-code),
+::view-transition-group(category-video) {
+    z-index: 4;
+}
+
+::view-transition-group(filter-container) {
+    z-index: 3;
+}
+
 ::view-transition-group(project-image-cssCat),
 ::view-transition-group(project-image-endusoWebsite),
 ::view-transition-group(project-image-gssWebsite),

@@ -28,37 +28,6 @@
 
             <div class="empty horizontal-lines"></div>
 
-            <section class="skills">
-                <h2>My skills</h2>
-                <span></span>
-                <span></span>
-                <div>
-                    <div>
-                        <h3>Design</h3>
-                        <ul>
-                            <li v-for="designSkill in designSkills" :key="designSkill.designSkillTitle">
-                                <img :src="designSkill.designSkillImage" alt="">
-                                <p class="skill-title">{{ designSkill.designSkillTitle }}</p>
-                                <p class="percentage">{{ designSkill.designSkillPercentage }}</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Development</h3>
-                        <ul>
-                            <li v-for="devSkill in devSkills" :key="devSkill.devSkillTitle">
-                                <img :src="devSkill.devSkillImage" alt="">
-                                <p class="skill-title">{{ devSkill.devSkillTitle }}</p>
-                                <p class="percentage">{{ devSkill.devSkillPercentage }}</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </section>
-
-            <div class="empty horizontal-lines"></div>
-
             <section class="work-experience">
                 <div class="text-container">
                     <h2>Work experience</h2>
@@ -99,6 +68,37 @@
                             <span class="tooltip-label">{{ field.label }}:</span>
                             <span class="tooltip-value">{{ activeWorkExperience?.[field.key] }}</span>
                         </span>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="empty horizontal-lines"></div>
+
+            <section class="skills">
+                <h2>My skills</h2>
+                <span></span>
+                <span></span>
+                <div>
+                    <div>
+                        <h3>Design</h3>
+                        <ul>
+                            <li v-for="designSkill in designSkills" :key="designSkill.designSkillTitle">
+                                <img :src="designSkill.designSkillImage" alt="">
+                                <p class="skill-title">{{ designSkill.designSkillTitle }}</p>
+                                <p class="percentage">{{ designSkill.designSkillPercentage }}</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Development</h3>
+                        <ul>
+                            <li v-for="devSkill in devSkills" :key="devSkill.devSkillTitle">
+                                <img :src="devSkill.devSkillImage" alt="">
+                                <p class="skill-title">{{ devSkill.devSkillTitle }}</p>
+                                <p class="percentage">{{ devSkill.devSkillPercentage }}</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -200,7 +200,7 @@ const workExperiences = ref([
         workExperienceGridColumn: 2,
         workExperienceCompany: 'YESSS Electrical NL',
         workExperienceRole: 'Marketing employee',
-        workExperienceDuration: 'Maart 2023 - Jan 2025',
+        workExperienceDuration: 'Mar 2023 - Jan 2025',
         workExperienceLocation: 'Beusichem, GD',
     },
     {
@@ -230,7 +230,7 @@ const workExperiences = ref([
         workExperienceGridColumn: 2,
         workExperienceCompany: 'Samcity',
         workExperienceRole: 'Hospitality & Service Staff',
-        workExperienceDuration: '10 April 2025 - 20 Aug 2025',
+        workExperienceDuration: '10 Apr 2025 - 20 Aug 2025',
         workExperienceLocation: 'Hoorn, NH',
     },
     {
@@ -412,150 +412,6 @@ const hideTooltip = () => {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - */
-/* SKILLS */
-/* - - - - - - - - - - - - - - - - - - - - - - - - */
-
-.container .skills {
-    position: relative;
-    display: grid;
-}
-
-.container .skills h2 {
-    width: 100%;
-    text-align: center;
-    padding-block: 3rem;
-    border-bottom: 1px solid var(--background-grid);
-    font-family: 'poppins', sans-serif;
-    font-size: var(--h2-size);
-    line-height: 1.5em;
-    font-weight: 400;
-    color: var(--text);
-}
-
-.container .skills span {
-    position: absolute;
-    display: block;
-    height: 2px;
-    background: var(--border-400);
-    translate: 0 -50%;
-    top: 7rem;
-}
-
-.container .skills span:nth-of-type(1) {
-    right: 50%;
-    width: calc(50% - 10cqw - 2rem - (67px / 2));
-}
-
-
-.container .skills span:nth-of-type(2) {
-    left: 50%;
-    width: calc(2rem + (106px / 2));
-}
-
-.container .skills span:nth-of-type(1)::before {
-    content: '';
-    position: absolute;
-    height: 4rem;
-    width: 2px;
-    background: var(--border-400);
-    left: 0;
-    top: 0;
-}
-
-.container .skills span:nth-of-type(1)::after {
-    content: '';
-    position: absolute;
-    height: 1rem;
-    width: 2px;
-    translate: 50%;
-    background: var(--border-400);
-    right: 0;
-    bottom: 0;
-}
-
-.container .skills span:nth-of-type(2)::after {
-    content: '';
-    position: absolute;
-    height: 4rem;
-    width: 2px;
-    background: var(--border-400);
-    right: 0;
-    top: 0;
-}
-
-.container .skills>div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-inline: 10cqw;
-}
-
-.container .skills>div div {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-}
-
-.container .skills>div div:nth-of-type(1) {
-    border-inline: 1px solid var(--background-grid);
-}
-
-.container .skills>div div:nth-of-type(2) {
-    border-right: 1px solid var(--background-grid);
-}
-
-.container .skills>div div h3 {
-    font-family: 'poppins', sans-serif;
-    font-size: var(--small-size);
-    font-weight: 400;
-    color: var(--text);
-    max-width: max-content;
-    padding: .25rem .75rem;
-    background: var(--border-400);
-    color: var(--background-solid);
-    border-radius: 5px;
-    corner-shape: bevel;
-}
-
-.container .skills>div div ul {
-    display: grid;
-    gap: 1rem;
-}
-
-.container .skills>div div ul li {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.container .skills>div div ul li:not(:last-of-type) {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--background-grid);
-}
-
-.container .skills>div div ul li img {
-    width: 1.5rem;
-}
-
-.container .skills>div div ul li .skill-title {
-    font-family: 'poppins', sans-serif;
-    font-size: var(--p-size);
-    font-weight: 400;
-    color: var(--text);
-}
-
-.container .skills>div div ul li .percentage {
-    font-family: 'rm-mono', monospace;
-    font-size: var(--small-size);
-    font-weight: 400;
-    color: var(--border-400);
-    margin-left: auto;
-    padding: .25rem;
-    background: var(--backdrop-200);
-}
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - */
 /* WORK EXPERIENCE */
 /* - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -592,6 +448,7 @@ const hideTooltip = () => {
     line-height: 1.75em;
     color: var(--text);
 }
+
 
 .container .work-experience .timeline {
     border-left: 1px solid var(--background-grid);
@@ -715,6 +572,149 @@ const hideTooltip = () => {
     opacity: 1;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* SKILLS */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.container .skills {
+    position: relative;
+    display: grid;
+}
+
+.container .skills h2 {
+    width: 100%;
+    text-align: center;
+    padding-block: 3rem;
+    border-bottom: 1px solid var(--background-grid);
+    font-family: 'poppins', sans-serif;
+    font-size: var(--h2-size);
+    line-height: 1.5em;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.container .skills span {
+    position: absolute;
+    display: block;
+    height: 2px;
+    background: var(--border-400);
+    translate: 0 -50%;
+    top: 7rem;
+}
+
+.container .skills span:nth-of-type(1) {
+    right: 50%;
+    width: calc(50% - 10cqw - 2rem - (67px / 2));
+}
+
+
+.container .skills span:nth-of-type(2) {
+    left: 50%;
+    width: calc(2rem + (106px / 2));
+}
+
+.container .skills span:nth-of-type(1)::before {
+    content: '';
+    position: absolute;
+    height: 5rem;
+    width: 2px;
+    background: var(--border-400);
+    left: 0;
+    top: 0;
+}
+
+.container .skills span:nth-of-type(1)::after {
+    content: '';
+    position: absolute;
+    height: 1rem;
+    width: 2px;
+    translate: 50%;
+    background: var(--border-400);
+    right: 0;
+    bottom: 0;
+}
+
+.container .skills span:nth-of-type(2)::after {
+    content: '';
+    position: absolute;
+    height: 5rem;
+    width: 2px;
+    background: var(--border-400);
+    right: 0;
+    top: 0;
+}
+
+.container .skills>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 10cqw;
+}
+
+.container .skills>div div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.container .skills>div div:nth-of-type(1) {
+    border-inline: 1px solid var(--background-grid);
+}
+
+.container .skills>div div:nth-of-type(2) {
+    border-right: 1px solid var(--background-grid);
+}
+
+.container .skills>div div h3 {
+    font-family: 'poppins', sans-serif;
+    font-size: var(--small-size);
+    font-weight: 400;
+    color: var(--text);
+    max-width: max-content;
+    padding: .25rem .75rem;
+    background: var(--border-400);
+    color: var(--background-solid);
+    border-radius: 5px;
+    corner-shape: bevel;
+}
+
+.container .skills>div div ul {
+    display: grid;
+    gap: 1rem;
+}
+
+.container .skills>div div ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container .skills>div div ul li:not(:last-of-type) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--background-grid);
+}
+
+.container .skills>div div ul li img {
+    width: 1.5rem;
+}
+
+.container .skills>div div ul li .skill-title {
+    font-family: 'poppins', sans-serif;
+    font-size: var(--p-size);
+    font-weight: 400;
+    color: var(--text);
+}
+
+.container .skills>div div ul li .percentage {
+    font-family: 'rm-mono', monospace;
+    font-size: var(--small-size);
+    font-weight: 400;
+    color: var(--border-400);
+    margin-left: auto;
+    padding: .25rem;
+    background: var(--backdrop-200);
+}
+
 
 @media (width < 700px) {
     .container section:nth-of-type(1) h1::after {
@@ -733,6 +733,28 @@ const hideTooltip = () => {
         padding: 2rem;
     }
 
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - */
+    /* WORK EXPERIENCE */
+    /* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+    .container .work-experience {
+        grid-template-columns: 1fr;
+    }
+
+    .container .work-experience .text-container {
+        position: static;
+        padding: 2rem;
+        border-bottom: 1px solid var(--background-grid);
+    }
+
+    .container .work-experience .timeline .timeline-grid span {
+        cursor: auto;
+    }
+
+    #tooltip {
+        display: none;
+    }
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - */
     /* SKILLS */
@@ -767,29 +789,6 @@ const hideTooltip = () => {
 
     .container .skills>div div:nth-of-type(2) {
         border-right: none;
-    }
-
-
-    /* - - - - - - - - - - - - - - - - - - - - - - - - */
-    /* WORK EXPERIENCE */
-    /* - - - - - - - - - - - - - - - - - - - - - - - - */
-
-    .container .work-experience {
-        grid-template-columns: 1fr;
-    }
-
-    .container .work-experience .text-container {
-        position: static;
-        padding: 2rem;
-        border-bottom: 1px solid var(--background-grid);
-    }
-
-    .container .work-experience .timeline .timeline-grid span {
-        cursor: auto;
-    }
-
-    #tooltip {
-        display: none;
     }
 }
 </style>

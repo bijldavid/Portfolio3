@@ -33,7 +33,7 @@
 
             <section class="projects vertical-lines">
                 <h2 class="visually-hidden">Projects</h2>
-                <fieldset class="vertical-lines">
+                <fieldset class="vertical-lines" style="view-transition-name: filter-container;">
                     <legend class="visually-hidden">Project categories</legend>
                     <label :class="getCategoryOrderClass('Design')" style="view-transition-name: category-design;">
                         <input :checked="selectedCategories.includes('Design')" type="checkbox" value="Design"
