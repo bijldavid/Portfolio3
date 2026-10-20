@@ -20,7 +20,7 @@ export const projects = [
         imageAlt: 'Enduso website',
         description: 'A responsive energy website with bold branding and motion.',
         tags: ['Design'],
-        projectLink: 'https://enduso-website.vercel.app/',
+        projectLink: 'https://enduso.com/',
         projectGithub: 'https://github.com/bijldavid/enduso-website',
     },
     {
